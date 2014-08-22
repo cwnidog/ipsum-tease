@@ -7,8 +7,23 @@ FINAL PROJECT
 
 =====IPSUM-TEASE=====
 
+GOALS:
+  -Design a shop that allows basic user interaction
+    *Including:
 
+      -Shop
+        -Basic Page Navigation
+        -Womens, Mens, Kids
+        -Random Shirt Generation (using ipsum generator)
+          -Font Selector
 
+      -Shopping Cart
+        -Checkout
+          -Forms take in contact info and location from user
+
+      -Add-On's (Time allowing)
+        -Save favorite shirts
+        -Delete shirts
 
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
