@@ -1,0 +1,19 @@
+SAM HAMM
+JOHN LEONARD
+FORREST PARKER
+
+SEA-B26-FOUNDATIONS BOOTCAMP
+FINAL PROJECT
+
+=====IPSUM-TEASE=====
+
+
+
+
+=====CREDITS - ORIGINAL IDEA BY=====
+CRAIG GRANT
+ANDREW POTTER
+
+=====SOURCES=====
+http://oscarotero.com/jquery/
+http://caniuse.com/
