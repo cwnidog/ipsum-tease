@@ -1,0 +1,48 @@
+.navbar {
+  padding-bottom: 20px;
+  border-bottom: 10px;
+}
+
+.nav-links {
+  display: inline-block;
+  width: 30%;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.nav-links a{
+  margin-left: 15%;
+}
+
+.login {
+  margin-left: 10%;
+  display: inline-block;
+}
+.shop-cart{
+  display: inline;
+  width: 15%;
+  margin-left: 10%;
+}
+
+#shop-cart-img {
+
+  height: 75px;
+}
+
+.sp-ban {
+  text-align: center;
+}
+
+.sh-pre {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0px;
+}
+
+.shop {
+  text-align: center;
+  width: 30%;
+}
+
