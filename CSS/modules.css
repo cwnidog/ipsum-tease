@@ -1,14 +1,14 @@
 .navbar {
-  padding-bottom: 20px;
   border-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .nav-links {
   display: inline-block;
-  width: 30%;
-  font-weight: bold;
   font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
+  width: 30%;
 }
 
 .nav-links a{
@@ -16,13 +16,13 @@
 }
 
 .login {
-  margin-left: 10%;
   display: inline-block;
+  margin-left: 10%;
 }
 .shop-cart{
   display: inline;
-  width: 15%;
   margin-left: 10%;
+  width: 15%;
 }
 
 #shop-cart-img {
@@ -35,10 +35,10 @@
 }
 
 .sh-pre {
-  width: 100%;
   display: block;
-  padding: 0;
   margin: 0px;
+  padding: 0;
+  width: 100%;
 }
 
 .shop {

@@ -25,10 +25,14 @@ GOALS:
         -Save favorite shirts
         -Delete shirts
 
+NOTES:
+
+
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
 ANDREW POTTER
 
 =====SOURCES=====
-http://oscarotero.com/jquery/
 http://caniuse.com/
+http://oscarotero.com/jquery/
+http://www.w3schools.com/
