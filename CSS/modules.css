@@ -1,0 +1,52 @@
+.navbar {
+  border-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.nav-links {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+}
+
+.nav-links a{
+  margin-left: 15%;
+}
+
+.login {
+  display: inline-block;
+  margin-left: 10%;
+}
+.shop-cart{
+  display: inline;
+  margin-left: 10%;
+  width: 15%;
+}
+
+#shop-cart-img {
+
+  height: 75px;
+}
+
+.sp-ban {
+  text-align: center;
+}
+
+.sh-pre {
+  display: block;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+}
+
+.shop {
+  text-align: center;
+  width: 30%;
+}
+
+.shop h2 {
+  font-size: 3em;
+}
+
