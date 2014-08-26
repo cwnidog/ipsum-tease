@@ -1,0 +1,43 @@
+/* general link effects */
+
+/* unvisited link */
+a:link {
+    color: #000000;
+}
+
+/* visited link */
+a:visited {
+    color: #FF33CC;
+}
+
+/* mouse over link */
+a:hover {
+    color: #0000FF;
+}
+
+/* selected link */
+a:active {
+    color: #FF33CC;
+}
+
+/* links in T-shirt boxes should remain black*/
+
+/* unvisited link */
+a:link {
+    color: #000000;
+}
+
+/* visited link */
+.tshirtBox a:visited {
+    color: #000;
+}
+
+/* mouse over link */
+.tshirtBox a:hover {
+    color: #000;
+}
+
+/* selected link */
+.tshirtBox a:active {
+    color: #000;
+}

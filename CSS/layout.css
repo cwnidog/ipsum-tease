@@ -7,7 +7,7 @@
 nav {
   display: inline-block;
   height: 175px;
-  margin: 0px;
+  margin: 2%;
   width: 100%;
 }
 
@@ -47,4 +47,61 @@ section {
 }
 .sp-ban section {
   width: 100%;
+}
+
+.au-ban {
+  margin: 2%;
+}
+
+.au-content__img {
+  float: left;
+  width: 25%;
+}
+
+.au-blurb {
+  float: right;
+  margin-left: 5%;
+  width: 60%;
+}
+
+.mensContent {
+  width: 100%;
+}
+
+.womensContent {
+  width: 100%;
+}
+
+.kidsContent {
+  width: 100%;
+}
+
+.tshirtBox {
+  float: left;
+  margin: 1%;
+  width: 15%;
+}
+.tshirtImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.tshirtDesc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mensContent__tshirtBox--bottomLeft {
+  clear:both;
+}
+
+#womensContent__tshirtBox--bottomLeft {
+  clear:both;
+}
+
+#kidsContent__tshirtBox--bottomLeft {
+  clear:both;
 }
