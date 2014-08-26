@@ -1,4 +1,5 @@
-.navbar {
+/* common banner */
+.nav-bar {
   border-bottom: 10px;
   padding-bottom: 20px;
 }
@@ -26,10 +27,10 @@
 }
 
 #shop-cart-img {
-
   height: 75px;
 }
 
+/* splash page */
 .sp-ban {
   text-align: center;
 }
@@ -50,3 +51,20 @@
   font-size: 3em;
 }
 
+/* About Us */
+.au-ban {
+  background-image: url("../files/manuscript_3.jpg");
+  color: #003366;
+  font-family: "comic sans ms";
+  font-size: 3em;
+  display: block;
+  text-align: center;
+}
+
+.au-blurb {
+  background-color: #A3C8FF;
+}
+
+.tshirtBox a {
+  text-decoration: none;
+}
