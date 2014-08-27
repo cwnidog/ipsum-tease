@@ -51,6 +51,20 @@
   font-size: 3em;
 }
 
+.footer_h2 {
+  font-size: 1em;
+}
+
+.footer__contactBlock {
+  background-color: #808080;
+}
+
+.footer__contactBlock ul li {
+  display: block;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
 /* About Us */
 .au-ban {
   background-image: url("../files/manuscript_3.jpg");
@@ -63,6 +77,7 @@
 
 .au-blurb {
   background-color: #A3C8FF;
+  padding-left: 1%;
 }
 
 .tshirtBox a {

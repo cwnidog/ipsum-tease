@@ -55,13 +55,39 @@ section {
 
 .au-content__img {
   float: left;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
   width: 25%;
 }
 
 .au-blurb {
   float: right;
+  margin-bottom: 1%;
   margin-left: 5%;
-  width: 60%;
+  margin-right: 1%;
+  margin-top: 1%;
+  width: 45%;
+}
+
+.footer__contactBlock {
+  margin-left: 2%;
+  margin-top: 1%;
+  text-indent: 1%;
+  width: 98%;
+}
+
+.footer__h2{
+  margin-bottom: 1%;
+}
+
+.footer__contactBlock p {
+  margin: 1%;
+}
+
+.footer__contactBlock ul li {
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 
 .mensContent {
@@ -92,16 +118,4 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#mensContent__tshirtBox--bottomLeft {
-  clear:both;
-}
-
-#womensContent__tshirtBox--bottomLeft {
-  clear:both;
-}
-
-#kidsContent__tshirtBox--bottomLeft {
-  clear:both;
 }
