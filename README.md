@@ -36,3 +36,4 @@ ANDREW POTTER
 http://caniuse.com/
 http://oscarotero.com/jquery/
 http://www.w3schools.com/
+https://github.com/redwerks/horizontalipsum
