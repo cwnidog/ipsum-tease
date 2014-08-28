@@ -22,6 +22,7 @@ GOALS:
           -Forms take in contact info and location from user
 
       -Add-On's (Time allowing)
+        -Add shirt styles & colors
         -Save favorite shirts
         -Delete shirts
 
@@ -37,3 +38,6 @@ http://caniuse.com/
 http://oscarotero.com/jquery/
 http://www.w3schools.com/
 https://github.com/redwerks/horizontalipsum
+https://api.jquery.com
+http://gsnedders.html5.org/outliner
+http://validator.w3.org/
