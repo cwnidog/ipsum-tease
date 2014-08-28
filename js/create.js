@@ -6,8 +6,8 @@
     this.category = "men";      // men, women, kids
     this.size = "large";        // small, medium large
     this.color = "brown";       // brown, blue, green
-    this.style = "traditional"; // traditoional, baseball, long-sleeve
-    this.quote = "";            // string to hold the quote to be printed
+    this.style = "traditional"; // traditional, baseball, long-sleeve
+    this.text = "Latin";        // string to hold the quote to be printed
     this.price = 29.95;         // All shirts $29.95 - for now
     this.quantity = 1;          // how many does the customet want
 
@@ -19,13 +19,13 @@
     // set the category
     this.setCategory = function(category) {
       switch(category){
-        case "men":
+        case "Men":
           this.category = category;
           return true;
-        case "women":
+        case "Women":
           this.category = category;
           return true;
-        case "kids":
+        case "Kids":
           this.category = category;
           return true;
         default:
@@ -34,21 +34,21 @@
     } // setCategory
 
     // get the size
-    this.getCategory = function() {
+    this.getSize = function() {
       return this.size;
     }
 
     // set the size
     this.setSize = function(size) {
       switch(size){
-        case "small":
-          this.category = size;
+        case "Small":
+          this.size = size;
           return true;
-        case "medium":
-          this.category = size;
+        case "Medium":
+          this.size = size;
           return true;
-        case "large":
-          this.category = size;
+        case "Large":
+          this.size = size;
           return true;
         default:
           return false;
@@ -62,38 +62,37 @@
 
     // set the color
     this.setColor = function(color) {
-      switch(size){
-        case "brown":
-          this.category = color;
+      switch(color){
+        case "Brown":
+          this.color = color;
           return true;
-        case "blue":
-          this.category = color;
+        case "Blue":
+          this.color = color;
           return true;
-        case "green":
-          this.category = color;
+        case "Green":
+          this.color = color;
           return true;
         default:
           return false;
       } //switch
     } // setColor
-  }
 
-   // get the style
+    // get the style
     this.getStyle = function() {
       return this.style;
-    }
+    } // getStyle
 
       // set the style
     this.setStyle = function(style) {
-      switch(size){
-        case "traditional":
-          this.category = style;
+      switch(style){
+        case "Traditional":
+          this.style = style;
           return true;
-        case "baseball":
-          this.category = style;
+        case "Baseball":
+          this.style = style;
           return true;
-        case "long-sleeve":
-          this.category = style;
+        case "Long-sleeve":
+          this.style = style;
           return true;
         default:
           return false;
@@ -101,16 +100,16 @@
     } // setStyle
 
 
-   // get the quote
-    this.getQuote = function() {
-      return this.style;
+   // get the text
+    this.getText = function() {
+      return this.text;
     }
 
-      // set the quote
-    this.setStyle = function(quote) {
-        this.quote = quote;
+      // set the text
+    this.setText = function(text) {
+        this.text = text;
         return true;
-    } // setQuote
+    } // setText
 
     // get the price
     this.getPrice = function() {
@@ -124,16 +123,10 @@
       return this.quantity;
     }
 
-      // set the quote
-    this.setStyle = function(quantity) {
-        this.quantity = quantity;
-        return true;
-    } // setQuote
-
     // method to return a CSV string with all the attribute values
     this.getCSV = function() {
-      var csvString = this.category + ',' + this.size + ',' + this.color + ',' + this.style + ', "' +
-                      this.quote + '",' + this.price + ',' + this.quantity;
+      var csvString = this.category + ',' + this.size + ',' + this.color + ',' +
+      this.style + ', "' + this.quote + '",' + this.price + ',' + this.quantity;
       return
     } // getCSV
  // TShirt
