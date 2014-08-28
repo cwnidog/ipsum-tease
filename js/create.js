@@ -208,5 +208,21 @@ $(document).ready(function(){
     $("#shirtText").text("Lo-fi Etsy wolf, Tumblr food truck single-origin coffee irony Helvetica sartorial cornhole. Biodiesel fanny pack stumptown mlkshk, forage chia art party farm-to-table viral ethical vinyl.");
   });
 
+  /* When the create button is pushed, we'll instantiate a new TShirt and
+     populate its attributes with values the user has provided. */
 
-});
+  $("#btnCreate").click(function() {
+
+    // get a new instance of TShirt
+    var tShirt = new TShirt();
+
+    // fill tShirt with user's values
+    tShirt.setCategory($("#createCategory").val);
+    tShirt.setSize($("#createSize").val);
+    tShirt.setStyle($("#createStyle").val);
+    thsirt.setColor($("#createColor").val);
+    tShirt.setText($("#shirtText").val);
+  }); // when the "Create" button is clicked
+
+
+}); // when document ready
