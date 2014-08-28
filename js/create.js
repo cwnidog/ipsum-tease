@@ -2,134 +2,134 @@
   Define a TShirt object to hold attributes defining a t-shirt and
   to provide methods to access those attributes. */
 
-  function TShirt(){
-    this.category = "men";      // men, women, kids
-    this.size = "large";        // small, medium, large
-    this.color = "brown";       // brown, blue, green
-    this.style = "traditional"; // traditional, baseball, long-sleeve
-    this.text = "Latin";        // string to hold the quote to be printed
-    this.price = 29.95;         // All shirts $29.95 - for now
-    this.quantity = 1;          // how many does the customer want
+function TShirt(){
+  this.category = "men";      // men, women, kids
+  this.size = "large";        // small, medium, large
+  this.color = "brown";       // brown, blue, green
+  this.style = "traditional"; // traditional, baseball, long-sleeve
+  this.text = "Latin";        // string to hold the quote to be printed
+  this.price = 29.95;         // All shirts $29.95 - for now
+  this.quantity = 1;          // how many does the customer want
 
-    // get the category
-    this.getCategory = function() {
+  // get the category
+  this.getCategory = function() {
       return this.category;
-    }
+  }
 
-    // set the category
-    this.setCategory = function(category) {
-      switch(category){
-        case "Men":
-          this.category = category;
-          return true;
-        case "Women":
-          this.category = category;
-          return true;
-        case "Kids":
-          this.category = category;
-          return true;
-        default:
-          return false;
-      } //switch
-    } // setCategory
-
-    // get the size
-    this.getSize = function() {
-      return this.size;
-    }
-
-    // set the size
-    this.setSize = function(size) {
-      switch(size){
-        case "Small":
-          this.size = size;
-          return true;
-        case "Medium":
-          this.size = size;
-          return true;
-        case "Large":
-          this.size = size;
-          return true;
-        default:
-          return false;
-      } //switch
-    } // setSize
-
-     // get the color
-    this.getColor = function() {
-      return this.color;
-    }
-
-    // set the color
-    this.setColor = function(color) {
-      switch(color){
-        case "Brown":
-          this.color = color;
-          return true;
-        case "Blue":
-          this.color = color;
-          return true;
-        case "Green":
-          this.color = color;
-          return true;
-        default:
-          return false;
-      } //switch
-    } // setColor
-
-    // get the style
-    this.getStyle = function() {
-      return this.style;
-    } // getStyle
-
-      // set the style
-    this.setStyle = function(style) {
-      switch(style){
-        case "Traditional":
-          this.style = style;
-          return true;
-        case "Baseball":
-          this.style = style;
-          return true;
-        case "Long-sleeve":
-          this.style = style;
-          return true;
-        default:
-          return false;
-      } //switch
-    } // setStyle
-
-
-   // get the text
-    this.getText = function() {
-      return this.text;
-    }
-
-      // set the text
-    this.setText = function(text) {
-        this.text = text;
+  // set the category
+  this.setCategory = function(category) {
+    switch(category){
+      case "Men":
+        this.category = category;
         return true;
-    } // setText
+      case "Women":
+        this.category = category;
+        return true;
+      case "Kids":
+        this.category = category;
+        return true;
+      default:
+        return false;
+    } //switch
+  } // setCategory
 
-    // get the price
-    this.getPrice = function() {
-      return this.price;
-    }
+  // get the size
+  this.getSize = function() {
+    return this.size;
+  }
 
-    // There is no method to set the price - all are $29.95, for now
+  // set the size
+  this.setSize = function(size) {
+    switch(size){
+      case "Small":
+        this.size = size;
+        return true;
+      case "Medium":
+        this.size = size;
+        return true;
+      case "Large":
+        this.size = size;
+        return true;
+      default:
+        return false;
+    } //switch
+  } // setSize
 
-   // get the quantity
-    this.getQuantity = function() {
-      return this.quantity;
-    }
+   // get the color
+  this.getColor = function() {
+    return this.color;
+  }
 
-    // method to return a CSV string with all the attribute values
-    this.getCSV = function() {
-      var csvString = this.category + ',' + this.size + ',' + this.color + ',' +
-      this.style + ', "' + this.quote + '",' + this.price + ',' + this.quantity;
-      return
-    } // getCSV
- // TShirt
+  // set the color
+  this.setColor = function(color) {
+    switch(color){
+      case "Brown":
+        this.color = color;
+        return true;
+      case "Blue":
+        this.color = color;
+        return true;
+      case "Green":
+        this.color = color;
+        return true;
+      default:
+        return false;
+    } //switch
+  } // setColor
+
+  // get the style
+  this.getStyle = function() {
+    return this.style;
+  } // getStyle
+
+  // set the style
+  this.setStyle = function(style) {
+    switch(style){
+      case "Traditional":
+        this.style = style;
+        return true;
+      case "Baseball":
+        this.style = style;
+        return true;
+      case "Long-sleeve":
+        this.style = style;
+        return true;
+      default:
+        return false;
+    } //switch
+  } // setStyle
+
+
+  // get the text
+  this.getText = function() {
+    return this.text;
+  }
+
+    // set the text
+  this.setText = function(text) {
+    this.text = text;
+    return true;
+  } // setText
+
+  // get the price
+  this.getPrice = function() {
+    return this.price;
+  }
+
+  // There is no method to set the price - all are $29.95, for now
+
+  // get the quantity
+  this.getQuantity = function() {
+    return this.quantity;
+  }
+
+  // method to return a CSV string with all the attribute values
+  this.getCSV = function() {
+    var csvString = this.category + ',' + this.size + ',' + this.color + ',' +
+    this.style + ', "' + this.quote + '",' + this.price + ',' + this.quantity;
+    return;
+  } // getCSV
+}  // TShirt
 
 
 $(document).ready(function(){
@@ -223,6 +223,5 @@ $(document).ready(function(){
     thsirt.setColor($("#createColor").val);
     tShirt.setText($("#shirtText").val);
   }); // when the "Create" button is clicked
-
 
 }); // when document ready
