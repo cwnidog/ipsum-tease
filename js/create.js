@@ -109,27 +109,67 @@
     this.setText = function(text) {
         this.text = text;
         return true;
-    } // setText
+      case "Green":
+        this.color = color;
+        return true;
+      default:
+        return false;
+    } //switch
+  } // setColor
 
-    // get the price
-    this.getPrice = function() {
-      return this.price;
-    }
+  // get the style
+  this.getStyle = function() {
+    return this.style;
+  } // getStyle
 
-    // There is no method to set the price - all are $29.95, for now
+  // set the style
+  this.setStyle = function(style) {
+    switch(style){
+      case "Traditional":
+        this.style = style;
+        return true;
+      case "Baseball":
+        this.style = style;
+        return true;
+      case "Long-sleeve":
+        this.style = style;
+        return true;
+      default:
+        return false;
+    } //switch
+  } // setStyle
 
-   // get the quantity
-    this.getQuantity = function() {
-      return this.quantity;
-    }
 
-    // method to return a CSV string with all the attribute values
-    this.getCSV = function() {
-      var csvString = this.category + ',' + this.size + ',' + this.color + ',' +
-      this.style + ', "' + this.quote + '",' + this.price + ',' + this.quantity;
-      return
-    } // getCSV
- // TShirt
+  // get the text
+  this.getText = function() {
+    return this.text;
+  }
+
+    // set the text
+  this.setText = function(text) {
+    this.text = text;
+    return true;
+  } // setText
+
+  // get the price
+  this.getPrice = function() {
+    return this.price;
+  }
+
+  // There is no method to set the price - all are $29.95, for now
+
+  // get the quantity
+  this.getQuantity = function() {
+    return this.quantity;
+  }
+
+  // method to return a CSV string with all the attribute values
+  this.getCSV = function() {
+    var csvString = this.category + ',' + this.size + ',' + this.color + ',' +
+    this.style + ', "' + this.quote + '",' + this.price + ',' + this.quantity;
+    return;
+  } // getCSV
+}  // TShirt
 
 
 $(document).ready(function(){
@@ -229,5 +269,7 @@ $(document).ready(function(){
     tShirt.setText($("#shirtText").val);
   }); // when the "Cart" button is clicked
 
+<<<<<<< HEAD
 
 }); // when document ready */
+
