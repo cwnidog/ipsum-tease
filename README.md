@@ -45,6 +45,10 @@ INDIVIDUAL LESSONS LEARNED:
 
 John - I learned quite a bit more about HTML and jQuery on this project. Also I was able to brush up on my software project management, knocking some of the rust off. I learned almost as much researching things that we *didn't* do as I did for the thing sthat we did end up using. For instance, use of a pop-up window to provide a pull-down menu. It was really excess to requirements so we decided not to use it, but finding out how was interesting.
 
+Sam
+*
+* Git, Git, and more Git (http://www.youtube.com/watch?v=vCadcBR95oU)
+*
 
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
