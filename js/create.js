@@ -210,6 +210,7 @@ $(document).ready(function(){
 
   $("#addToCart").click(function() {
     loggedinuser.shopCart.push(new TShirt($("#createCategory").text(), $("#createSize").text(), $("#createColor").text(), $("#createStyle").text(), $("#createText").text()));
+    localStorage.setItem('loggedinuser', JSON.stringify(loggedinuser));
     alert("T-Shirt added to the shopping cart.")
   });
 
