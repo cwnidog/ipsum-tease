@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="shop-cart-page">
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Splash page for Ipsum Tease">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/modules.css">
   <link rel="stylesheet" type="text/css" href="css/state.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
+   <link rel="stylesheet" type="text/css" href="css/shop-cart.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Ipsum Tease</title>
 </head>
@@ -40,7 +41,22 @@
 
   <article class="shop-cart-contents">
     <section id ="whats-in-cart">
+      <h2>Shopping Cart</h2>
+      <h3>
+        <div class='cart-title'>Category</div>
+        <div class='cart-title'>Size</div>
+        <div class='cart-title'>Color</div>
+        <div class='cart-title'>Style</div>
+        <div class='cart-title'>Quote</div>
+        <div class='cart-title'>Price</div>
+        <div class='cart-title'>Quantity</div>
+      </h3>
+    </section>
+  </article>
 
+  <article class="total">
+    <section>
+      <div id="carttotal">TOTAL:</div>
     </section>
   </article>
 
@@ -54,9 +70,9 @@
       </ul>
     </section>
   </footer>
-  <script type="text/javascript" src="js/hipsteripsum.js"></script>
-  <script type="text/javascript" src="js/loremipsum.js"></script>
-  <script type="text/javascript" src="js/baconipsum.js"></script>
+
   <script type="text/javascript" src="js/ipsum.js"></script>
+  <script type="text/javascript" src="js/create.js"></script>
+  <script type="text/javascript" src="js/shop-cart.js"></script>
 </body>
 </html>

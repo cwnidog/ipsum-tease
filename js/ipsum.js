@@ -3,7 +3,7 @@ var users = ['username' , 'forrest', 'john', 'sam'];
 var loggedinuser = "";
 
 /*on load write and handle login form's*/
-  $("div.login").append("<form><button id='login-pop'>Login</button><button id='signup-pop'>Signup</button></form>");
+$("div.login").append("<form><button id='login-pop'>Login</button><button id='signup-pop'>Signup</button></form>");
 
 function signupForm() {
   $("div.login form").empty();
@@ -41,38 +41,11 @@ function loggedIn() {
   }
 }
 
-
 /*UserObject, Item Object & Cart*/
 function User (loggedinuser) {
   this.name = loggedinuser;
   /* Cart to be filled with Item's */
   this.shopCart = [];
-}
-
-function Item (itemtype, color, size, ipsum) {
-  this.itemtype = itemtype;
-  this.color = color;
-  this.size = size;
-  this.ipsum = ipsum;
-  this.uniquename = itemtype+color+size+ipsum;
-}
-
-function shoppingCart(name) {
-  var itemname = this.id();
-  var color = $("#createcolor").val();
-  var size = $("#createsize").val();
-  var ipsum = $("#createipsum").val();
-  loggedinuser.shopCart.push(new Item(itemtype+color+size+ipsum));
-
-  alert(itemname +" was added to the cart");
-}
-
-function showCart() {
-  var cartcontents = " ";
-  for(var i = 0; i < loggedinuser.shopCart.length; i++) {
-    cartcontents+= loggedinuser.shopCart[i].name + " ";
-  }
-  alert(cartcontents);
 }
 
 /*Return 'n' hipster related words*/
@@ -132,11 +105,8 @@ function stepTwoLogin() {
   $("button#loggedin").on("click", function(){
     loggedIn();
   });
-}
 
-/* See cart contents*/
-$("#shop-cart-img").on('click', function (){
-  showCart();
-});
+  $("#shop-cart-img").wrap("<a href='shop-cart.html'></a>");
+}
 
 
