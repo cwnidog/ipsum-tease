@@ -99,7 +99,7 @@
           return false;
       } //switch
     } // setStyle
-  }
+
 
    // get the quote
     this.getQuote = function() {
@@ -136,7 +136,7 @@
                       this.quote + '",' + this.price + ',' + this.quantity;
       return
     } // getCSV
- } // TShirt
+ // TShirt
 
 
 $(document).ready(function(){
