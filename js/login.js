@@ -1,6 +1,7 @@
 var users = ['username' , 'forrest', 'john', 'sam'];
 var loggedinuser = "";
 
+loggedinuser = new User(loggedinuser);
 
 function signupForm() {
   $("div.login form").empty();
@@ -22,7 +23,7 @@ function loggedIn() {
       loggedinuser = checkname;
       loggedinuser = new User(loggedinuser);
       $("div.login form").empty();
-      localStorage.setItem('loggedinuser', JSON.stringify(loggedinuser));
+      //localStorage.setItem('loggedinuser', JSON.stringify(loggedinuser));
       $("div.login").append("<div><label id='userlogedin'>Welcome Back "+loggedinuser.name+"</label></div></form>");
       break;
     }
