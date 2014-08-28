@@ -4,12 +4,12 @@
 
   function TShirt(){
     this.category = "men";      // men, women, kids
-    this.size = "large";        // small, medium large
+    this.size = "large";        // small, medium, large
     this.color = "brown";       // brown, blue, green
-    this.style = "traditional"; // traditoional, baseball, long-sleeve
+    this.style = "traditional"; // traditional, baseball, long-sleeve
     this.quote = "";            // string to hold the quote to be printed
     this.price = 29.95;         // All shirts $29.95 - for now
-    this.quantity = 1;          // how many does the customet want
+    this.quantity = 1;          // how many does the customer want
 
     // get the category
     this.getCategory = function() {
