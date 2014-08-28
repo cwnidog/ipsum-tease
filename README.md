@@ -27,6 +27,9 @@ GOALS:
 
 NOTES:
 
+Creates User object and stuffs Item Objects into the user's cart
+Need to still display the cart in a visual way
+
 
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
