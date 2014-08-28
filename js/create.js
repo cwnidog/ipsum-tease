@@ -2,72 +2,112 @@
   Define a TShirt object to hold attributes defining a t-shirt and
   to provide methods to access those attributes. */
 
-function TShirt(){
-  this.category = "men";      // men, women, kids
-  this.size = "large";        // small, medium, large
-  this.color = "brown";       // brown, blue, green
-  this.style = "traditional"; // traditional, baseball, long-sleeve
-  this.text = "Latin";        // string to hold the quote to be printed
-  this.price = 29.95;         // All shirts $29.95 - for now
-  this.quantity = 1;          // how many does the customer want
+  function TShirt(){
+    this.category = "Men";      // men, women, kids
+    this.size = "Large";        // small, medium, large
+    this.color = "Brown";       // brown, blue, green
+    this.style = "Traditional"; // traditional, baseball, long-sleeve
+    this.text = "Latin";        // string to hold the quote to be printed
+    this.price = 29.95;         // All shirts $29.95 - for now
+    this.quantity = 1;          // how many does the customer want
 
-  // get the category
-  this.getCategory = function() {
+    // get the category
+    this.getCategory = function() {
       return this.category;
-  }
+    } // getCategory
 
-  // set the category
-  this.setCategory = function(category) {
-    switch(category){
-      case "Men":
-        this.category = category;
-        return true;
-      case "Women":
-        this.category = category;
-        return true;
-      case "Kids":
-        this.category = category;
-        return true;
-      default:
-        return false;
-    } //switch
-  } // setCategory
+    // set the category
+    this.setCategory = function(category) {
+      switch(category){
+        case "Men":
+          this.category = category;
+          return true;
+        case "Women":
+          this.category = category;
+          return true;
+        case "Kids":
+          this.category = category;
+          return true;
+        default:
+          return false;
+      } //switch
+    } // setCategory
 
-  // get the size
-  this.getSize = function() {
-    return this.size;
-  }
+    // get the size
+    this.getSize = function() {
+      return this.size;
+    } // getSize
 
-  // set the size
-  this.setSize = function(size) {
-    switch(size){
-      case "Small":
-        this.size = size;
-        return true;
-      case "Medium":
-        this.size = size;
-        return true;
-      case "Large":
-        this.size = size;
-        return true;
-      default:
-        return false;
-    } //switch
-  } // setSize
+    // set the size
+    this.setSize = function(size) {
+      switch(size){
+        case "Small":
+          this.size = size;
+          return true;
+        case "Medium":
+          this.size = size;
+          return true;
+        case "Large":
+          this.size = size;
+          return true;
+        default:
+          return false;
+      } //switch
+    } // setSize
 
-   // get the color
-  this.getColor = function() {
-    return this.color;
-  }
+     // get the color
+    this.getColor = function() {
+      return this.color;
+    }
 
-  // set the color
-  this.setColor = function(color) {
-    switch(color){
-      case "Brown":
-        this.color = color;
-        return true;
-      case "Blue":
-        this.color = color;
+    // set the color
+    this.setColor = function(color) {
+      switch(color){
+        case "Brown":
+          this.color = color;
+          return true;
+        case "Blue":
+          this.color = color;
+          return true;
+        case "Green":
+          this.color = color;
+          return true;
+        default:
+          return false;
+      } //switch
+    } // setColor
+
+    // get the style
+    this.getStyle = function() {
+      return this.style;
+    } // getStyle
+
+      // set the style
+    this.setStyle = function(style) {
+      switch(style){
+        case "Traditional":
+          this.style = style;
+          return true;
+        case "Baseball":
+          this.style = style;
+          return true;
+        case "Long-sleeve":
+          this.style = style;
+          return true;
+        default:
+          return false;
+      } //switch
+    } // setStyle
+
+
+   // get the text
+    this.getText = function() {
+      return this.text;
+    }
+
+      // set the text
+    this.setText = function(text) {
+        this.text = text;
         return true;
       case "Green":
         this.color = color;
@@ -208,10 +248,15 @@ $(document).ready(function(){
     $("#shirtText").text("Lo-fi Etsy wolf, Tumblr food truck single-origin coffee irony Helvetica sartorial cornhole. Biodiesel fanny pack stumptown mlkshk, forage chia art party farm-to-table viral ethical vinyl.");
   });
 
-  /* When the create button is pushed, we'll instantiate a new TShirt and
+
+  $("#cart").click(function() {
+
+  });
+
+  /* When the cart button is pushed, we'll instantiate a new TShirt and
      populate its attributes with values the user has provided. */
 
-  $("#btnCreate").click(function() {
+  /*$("#cart").click(function() {
 
     // get a new instance of TShirt
     var tShirt = new TShirt();
@@ -222,6 +267,9 @@ $(document).ready(function(){
     tShirt.setStyle($("#createStyle").val);
     thsirt.setColor($("#createColor").val);
     tShirt.setText($("#shirtText").val);
-  }); // when the "Create" button is clicked
+  }); // when the "Cart" button is clicked
 
-}); // when document ready
+<<<<<<< HEAD
+
+}); // when document ready */
+
