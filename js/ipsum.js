@@ -1,30 +1,82 @@
-$("div.login").append("<form><button id='login-pop'>Login</button><button id='signup-pop'>Signup</button></form>");
+/*test users, set login to false*/
+var users = ['username' , 'forrest', 'john', 'sam'];
+var loggedinuser = "";
 
+/*on load write and handle login form's*/
+  $("div.login").append("<form><button id='login-pop'>Login</button><button id='signup-pop'>Signup</button></form>");
 
-$("button#login-pop").on("click", function(){
-  loginform();
-});
-
-
-$("button#signup-pop").on("click", function(){
-  signup();
-});
-
-function signup() {
-/* Do something
-
-  Probably a signup form
-
-*/
-}
-
-function loginform() {
+function signupForm() {
   $("div.login form").empty();
-  $("div.login").append("<form action='/login' method='post'><div><label>Username:</label><input type='text' name='username'/></div><div><input type='submit' id='subserver' value='Log In'/></div></form>");
+  $("div.login").append("<form><div><label>Username:</label><input type='text' id='named' name='username'/></div><div><button id='signedup'>Signed up</button></div></form>");
+//borrowed form guts     action='/signup' method='post'
+}
+
+function loginForm() {
+  $("div.login form").empty();
+  $("div.login").append("<form><div><label>Username:</label><input type='text' id='named' name='username'/></div><div><button id='loggedin'>Logged In</button></div></form>");
+  //borrowed form guts     action='/signup' method='post'
+}
+
+/* log user in.  Currently not firing for some reason */
+function loggedIn() {
+  checkname=$("div.login #named").val();
+  for(var i = 0; i < users.length; i++) {
+    if(users[i] == checkname) {
+      loggedinuser = $("div.login #named").val();
+      loggedinuser = checkname;
+      loggedinuser = new User(loggedinuser);
+      $("div.login form").empty();
+      $("div.login").append("<div><label id='userlogedin'>Welcome Back "+loggedinuser.name+"</label></div></form>");
+      /* Test shop cart */
+      loggedinuser.shopCart[0] = new Item("t-shirt", "blue", "large", "Gibberish" );
+      loggedinuser.shopCart[1] = new Item("t-shirt", "green", "medium", "Gibberish" );
+      loggedinuser.shopCart[2] = new Item("t-shirt", "pink", "small", "Gibberish" );
+
+      break;
+    }
+
+    else {
+      signupForm();
+    }
+  }
 }
 
 
-function hipsteripsum(numberwords) {
+/*UserObject, Item Object & Cart*/
+function User (loggedinuser) {
+  this.name = loggedinuser;
+  /* Cart to be filled with Item's */
+  this.shopCart = [];
+}
+
+function Item (itemtype, color, size, ipsum) {
+  this.itemtype = itemtype;
+  this.color = color;
+  this.size = size;
+  this.ipsum = ipsum;
+  this.uniquename = itemtype+color+size+ipsum;
+}
+
+function shoppingCart(name) {
+  var itemname = this.id();
+  var color = $("#createcolor").val();
+  var size = $("#createsize").val();
+  var ipsum = $("#createipsum").val();
+  loggedinuser.shopCart.push(new Item(itemtype+color+size+ipsum));
+
+  alert(itemname +" was added to the cart");
+}
+
+function showCart() {
+  var cartcontents = " ";
+  for(var i = 0; i < loggedinuser.shopCart.length; i++) {
+    cartcontents+= loggedinuser.shopCart[i].name + " ";
+  }
+  alert(cartcontents);
+}
+
+/*Return 'n' hipster related words*/
+function hipsterIpsum(numberwords) {
   var returnarray = [numberwords]
     var random = Math.floor(Math.random()*hipsterstring.length);
     var split = hipstring[random].split(" ");
@@ -35,7 +87,8 @@ function hipsteripsum(numberwords) {
     return returnarray;
 }
 
-function loremipsum(numberwords) {
+/*Return 'n' lorem related words*/
+function loremIpsum(numberwords) {
   var returnarray = [numberwords]
     var random = Math.floor(Math.random()*loremstring.length);
     var split = loremstring[random].split(" ");
@@ -46,7 +99,8 @@ function loremipsum(numberwords) {
     return returnarray;
 }
 
-function baconipsum(numberwords) {
+/*Return 'n' bacon related words*/
+function baconIpsum(numberwords) {
   var returnarray = [numberwords]
     var random = Math.floor(Math.random()*baconstring.length);
     var split = baconstring[random].split(" ");
@@ -57,7 +111,32 @@ function baconipsum(numberwords) {
     return returnarray;
 }
 
+/*Event listners*/
 
+//logging in//
+$("button#login-pop").on("click", function(){
+  loginForm();
+  stepTwoLogin();
+});
 
+$("button#signup-pop").on("click", function(){
+  signupForm();
+  stepTwoLogin();
+});
+
+function stepTwoLogin() {
+  $("button#signedup").on("click", function(){
+    newUser();
+  });
+
+  $("button#loggedin").on("click", function(){
+    loggedIn();
+  });
+}
+
+/* See cart contents*/
+$("#shop-cart-img").on('click', function (){
+  showCart();
+});
 
 
