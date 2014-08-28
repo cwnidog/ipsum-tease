@@ -55,28 +55,6 @@
       } //switch
     } // setSize
 
-     // get the color
-    this.getColor = function() {
-      return this.color;
-    }
-
-    // set the color
-    this.setColor = function(color) {
-      switch(color){
-        case "Brown":
-          this.color = color;
-          return true;
-        case "Blue":
-          this.color = color;
-          return true;
-        case "Green":
-          this.color = color;
-          return true;
-        default:
-          return false;
-      } //switch
-    } // setColor
-
     // get the style
     this.getStyle = function() {
       return this.style;
@@ -100,14 +78,19 @@
     } // setStyle
 
 
-   // get the text
-    this.getText = function() {
-      return this.text;
-    }
+   // get the color
+   function getColor() {
+    return this.color;
+   }
 
-      // set the text
-    this.setText = function(text) {
-        this.text = text;
+  // set the color
+  this.setColor = function(color) {
+    switch(color){
+      case "Brown":
+        this.color = color;
+        return true;
+      case "Blue":
+        this.color = color;
         return true;
       case "Green":
         this.color = color;
@@ -116,29 +99,6 @@
         return false;
     } //switch
   } // setColor
-
-  // get the style
-  this.getStyle = function() {
-    return this.style;
-  } // getStyle
-
-  // set the style
-  this.setStyle = function(style) {
-    switch(style){
-      case "Traditional":
-        this.style = style;
-        return true;
-      case "Baseball":
-        this.style = style;
-        return true;
-      case "Long-sleeve":
-        this.style = style;
-        return true;
-      default:
-        return false;
-    } //switch
-  } // setStyle
-
 
   // get the text
   this.getText = function() {
@@ -169,8 +129,7 @@
     this.style + ', "' + this.quote + '",' + this.price + ',' + this.quantity;
     return;
   } // getCSV
-}  // TShirt
-
+}
 
 $(document).ready(function(){
 
@@ -247,7 +206,7 @@ $(document).ready(function(){
   $("#btnHipster").click(function(){
     $("#shirtText").text("Lo-fi Etsy wolf, Tumblr food truck single-origin coffee irony Helvetica sartorial cornhole. Biodiesel fanny pack stumptown mlkshk, forage chia art party farm-to-table viral ethical vinyl.");
   });
-
+});
 
   $("#cart").click(function() {
 
