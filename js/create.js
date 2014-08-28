@@ -3,10 +3,10 @@
   to provide methods to access those attributes. */
 
   function TShirt(){
-    this.category = "men";      // men, women, kids
-    this.size = "large";        // small, medium, large
-    this.color = "brown";       // brown, blue, green
-    this.style = "traditional"; // traditional, baseball, long-sleeve
+    this.category = "Men";      // men, women, kids
+    this.size = "Large";        // small, medium, large
+    this.color = "Brown";       // brown, blue, green
+    this.style = "Traditional"; // traditional, baseball, long-sleeve
     this.text = "Latin";        // string to hold the quote to be printed
     this.price = 29.95;         // All shirts $29.95 - for now
     this.quantity = 1;          // how many does the customer want
@@ -14,7 +14,7 @@
     // get the category
     this.getCategory = function() {
       return this.category;
-    }
+    } // getCategory
 
     // set the category
     this.setCategory = function(category) {
@@ -36,7 +36,7 @@
     // get the size
     this.getSize = function() {
       return this.size;
-    }
+    } // getSize
 
     // set the size
     this.setSize = function(size) {
@@ -208,10 +208,15 @@ $(document).ready(function(){
     $("#shirtText").text("Lo-fi Etsy wolf, Tumblr food truck single-origin coffee irony Helvetica sartorial cornhole. Biodiesel fanny pack stumptown mlkshk, forage chia art party farm-to-table viral ethical vinyl.");
   });
 
+
+  $("#cart").click(function() {
+
+  });
+
   /* When the cart button is pushed, we'll instantiate a new TShirt and
      populate its attributes with values the user has provided. */
 
-  $("#cart").click(function() {
+  /*$("#cart").click(function() {
 
     // get a new instance of TShirt
     var tShirt = new TShirt();
@@ -225,4 +230,4 @@ $(document).ready(function(){
   }); // when the "Cart" button is clicked
 
 
-}); // when document ready
+}); // when document ready */
