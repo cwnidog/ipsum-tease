@@ -1,7 +1,7 @@
 /* common banner */
 .nav-bar {
-  border-bottom: 10px;
-  padding-bottom: 20px;
+  border-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .nav-links {
@@ -20,7 +20,7 @@
   display: inline-block;
   margin-left: 10%;
 }
-.shop-cart{
+/*.shop-cart{
   display: inline;
   margin-left: 10%;
   width: 15%;
@@ -28,7 +28,7 @@
 
 #shop-cart-img {
   height: 75px;
-}
+}*/
 
 /* splash page */
 .sp-ban {
