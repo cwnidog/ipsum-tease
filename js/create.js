@@ -2,12 +2,12 @@
   Define a TShirt object to hold attributes defining a t-shirt and
   to provide methods to access those attributes. */
 
-  function TShirt(){
-    this.category = "Men";      // men, women, kids
-    this.size = "Large";        // small, medium, large
-    this.color = "Brown";       // brown, blue, green
-    this.style = "Traditional"; // traditional, baseball, long-sleeve
-    this.text = "Latin";        // string to hold the quote to be printed
+  function TShirt(category, size, color, style, text){
+    this.category = category;      // men, women, kids
+    this.size = size;        // small, medium, large
+    this.color = color;       // brown, blue, green
+    this.style = style; // traditional, baseball, long-sleeve
+    this.text = text;        // string to hold the quote to be printed
     this.price = 29.95;         // All shirts $29.95 - for now
     this.quantity = 1;          // how many does the customer want
 
@@ -208,8 +208,9 @@ $(document).ready(function(){
   });
 });
 
-  $("#cart").click(function() {
-
+  $("#addToCart").click(function() {
+    loggedinuser.shopCart.push(new TShirt($("#createCategory").text(), $("#createSize").text(), $("#createColor").text(), $("#createStyle").text(), $("#createText").text()));
+    alert("T-Shirt added to the shopping cart.")
   });
 
   /* When the cart button is pushed, we'll instantiate a new TShirt and
@@ -231,4 +232,3 @@ $(document).ready(function(){
 <<<<<<< HEAD
 
 }); // when document ready */
-

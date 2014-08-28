@@ -1,0 +1,18 @@
+.shop-cart-contents {
+  width: 100%;
+  display: inline;
+}
+
+#whats-in-cart {
+  width: 100%;
+}
+
+div.cart-title {
+  width: 12%;
+  display: inline-block;
+  padding: 1%;
+}
+
+article.total {
+  padding-left: 70%;
+}
