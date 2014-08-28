@@ -27,6 +27,11 @@ function loggedIn() {
       loggedinuser = new User(loggedinuser);
       $("div.login form").empty();
       $("div.login").append("<div><label id='userlogedin'>Welcome Back "+loggedinuser.name+"</label></div></form>");
+      /* Test shop cart */
+      loggedinuser.shopCart[0] = new Item("t-shirt", "blue", "large", "Gibberish" );
+      loggedinuser.shopCart[1] = new Item("t-shirt", "green", "medium", "Gibberish" );
+      loggedinuser.shopCart[2] = new Item("t-shirt", "pink", "small", "Gibberish" );
+
       break;
     }
 
@@ -62,12 +67,14 @@ function shoppingCart(name) {
 }
 
 function showCart() {
-  var cartcontents = " ";
-  for(var i = 0; i < loggedinuser.shopCart.length; i++) {
-    cartcontents+= loggedinuser.shopCart[i].name + " ";
+    var cartcontents = " ";
+    var total = 0;
+    $("#whats-in-cart").append("<h2>Shopping Cart</h2>");
+    for(var i = 0; i < loggedinuser.shopCart.length; i++) {
+      $("#whats-in-cart").append("<div>"+loggedinuser.shopCart[i].getCSV+"</div>");
+      total += loggedinuser.shopCart[i].price;
+    }
   }
-  alert(cartcontents);
-}
 
 /*Return 'n' hipster related words*/
 function hipsterIpsum(numberwords) {
@@ -129,7 +136,7 @@ function stepTwoLogin() {
 }
 
 /* See cart contents*/
-$("#shop-cart-img").on('click', function (){
+$("shop-cart.html").ready(function(){
   showCart();
 });
 

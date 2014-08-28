@@ -1,4 +1,4 @@
-var hipstring = [];
+var hipsterstring = [];
 
 hipstring[0]= "Viral shabby chic paleo flannel typewriter flexitarian   Mixtape mlkshk aesthetic occupy keytar organic  gluten-free Tumblr flexitarian keffiyeh letterpress   Stumptown squid Wes Anderson  letterpress asymmetrical you probably haven't heard of them iPhone pop-up mixtape actually pour-over pork belly Tonx authentic  Tote bag Pitchfork try-hard   gentrify you probably haven't heard of them kogi DIY Thundercats small batch whatever put a bird on it plaid farm-to-table hoodie Cosby sweater   Thundercats you probably haven't heard of them ethnic tote bag  butcher roof party photo booth chillwave Godard wayfarers gluten-free salvia ethical keytar   Brooklyn food truck wayfarers Williamsburg plaid  Drinking vinegar XOXO messenger bag locavore retro  viral irony you probably haven't heard of them tattooed next level Schlitz Godard";
 
