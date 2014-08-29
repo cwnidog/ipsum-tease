@@ -8,7 +8,6 @@
     <title>Ipsum Tease. Gibberish, on a shirt.</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/body.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/modules.css">
@@ -16,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/theme.css">
   </head>
 
-  <body>
+  <body background="images/background.jpg">
 
 <header>
       <div class="article column1">
@@ -24,8 +23,8 @@
       </div>
 
       <div class="article column2">
-        <h1>Ipsum Tease.</h1>
-        <h2>Wearable gibberish.</h2>
+        <h1>Ipsum Tease</h1>
+        <h2>Wearable gibberish</h2>
        <p> <a href="create.html">Create your own!</a> | <a href="about-us.html">About Us</a></p>
       </div>
 
@@ -34,51 +33,63 @@
       </div>
       <div class ="login">
       <form>
-<!--    <button id="login-pop">Login</button>
-        <button id="signup-pop">Signup</button> -->
       </form>
     </div>
 </header>
 
+  <div id="create-content">
     <h1>Create your own!</h1>
 
-    <h3>Category:
-      <button class="button" id="btnWomen">Women</button>
+    <h3 class="button-row">Category:
+      <button id="btnWomen">Women</button>
       <button id="btnMen">Men</button>
       <button id="btnKids">Kids</button>
     </h3>
 
-     <h3>Size:
+     <h3 class="button-row">Size:
       <button id="btnSmall">S</button>
       <button id="btnMedium">M</button>
       <button id="btnLarge">L</button>
     </h3>
 
-     <h3>Style:
+     <h3 class="button-row">Style:
       <button id="btnTraditional">Traditional</button>
       <button id="btnBaseball">Baseball</button>
       <button id="btnLong">Long-sleeve</button>
     </h3>
 
-     <h3>Color:
+     <h3 class="button-row">Color:
       <button id="btnBlue">Blue</button>
       <button id="btnBrown">Brown</button>
       <button id="btnGreen">Green</button>
     </h3>
 
-     <h3>Text:
+     <h3 class="button-row">Text:
       <button id="btnLatin">Latin</button>
       <button id="btnBacon">Bacon</button>
       <button id="btnHipster">Hipster</button>
     </h3>
 
-    <h3>Here's your text:</h3>
+    <h3 class="button-row">Here's your text:</h3>
     <textarea readonly id="shirtText" rows="6" cols="75">
     </textarea>
 
     <h3 id="createToCart">You have selected: <span id="createCategory">category</span> + <span id="createSize">size</span> + <span id="createStyle">style</span> + <span id="createColor">color</span> + <span id="createText">text</span></h3>
 
-    <button id="addToCart">Order it now!</button>
+    <button class="button-row" id="addToCart">Order it now!</button>
+
+  </div>
+
+    <footer class="footer__contactBlock">
+    <section>
+      <h2 role="heading" class="footer__h2">Contact Us</h2>
+      <p>How to find us:</p>
+      <ul>
+        <li>phone: (555) 123-4567</li>
+        <li>e-mail: info@ipsumtetase.com</li>
+      </ul>
+    </section>
+  </footer>
 
     <script type="text/javascript" src="js/login.js"></script>
     <script src="js/create.js"></script>
