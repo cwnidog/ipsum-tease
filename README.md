@@ -48,8 +48,8 @@ John - I learned quite a bit more about HTML and jQuery on this project. Also I 
 Sam
 * I learned a lot more about how all of the puzzle pieces fit together in a project like this, that there is a blend of code and people and technology and tools and imaginary users and workflows that all eventually must mesh.
 * Git, Git, and more Git (http://www.youtube.com/watch?v=vCadcBR95oU)
-* Lots of improvement in my snesibility toward collaborative work. I've always been a lone wolf, or in a group project, just the guy who does everything for everyone else. In this dynamic, I'm coming to a greater understand of the tradeoffs between  the security of control and the positive effects of contributions of others.
-* Overall, this project brought about improved skills in my HTML, CSS, and JS, and further helped to illustrate how much I still have ahead of me to learn. It's been humbling and challenging. I can say that about the entire bootcamp experience, in general.
+* Lots of improvement in my snesibility toward collaborative work. I've always been a lone wolf, or in a group project, just the guy who does everything for everyone else. In this dynamic, I'm coming to a greater understanding of the tradeoffs between the security of control and the positive effects of contributions of others.
+* Overall, this project brought about improved skills in my HTML, CSS, jQuery, and JS, and further helped to illustrate how much I still have ahead of me to learn. It's been humbling and challenging. I can say that about the entire bootcamp experience, in general.
 
 Forrest -
 I learned a ton about jQuery and Node.js. Also, it was excellent practice getting to work with a team where we each were responsible for a portion of the work but also able to assist eachother with any difficulties that arouse.
