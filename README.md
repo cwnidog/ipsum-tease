@@ -51,6 +51,10 @@ Sam
 * Lots of improvement in my snesibility toward collaborative work. I've always been a lone wolf, or in a group project, just the guy who does everything for everyone else. In this dynamic, I'm coming to a greater understand of the tradeoffs between  the security of control and the positive effects of contributions of others.
 * Overall, this project brought about improved skills in my HTML, CSS, and JS, and further helped to illustrate how much I still have ahead of me to learn. It's been humbling and challenging. I can say that about the entire bootcamp experience, in general.
 
+Forrest -
+I learned a ton about jQuery and Node.js. Also, it was excellent practice getting to work with a team where we each were responsible for a portion of the work but also able to assist eachother with any difficulties that arouse.
+I think the biggest lesson though was not to get too attached to the original idea. As the work progresses it's important to be able to change your approach especially when facing a difficult problem.  We also learned that some ideas, while they may at first sound simple, can be really complex so it's best to start with the most simple 'dry' approach possible, after which it's much simple to expand your project.
+
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
 ANDREW POTTER
