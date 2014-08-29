@@ -46,9 +46,10 @@ INDIVIDUAL LESSONS LEARNED:
 John - I learned quite a bit more about HTML and jQuery on this project. Also I was able to brush up on my software project management, knocking some of the rust off. I learned almost as much researching things that we *didn't* do as I did for the thing sthat we did end up using. For instance, use of a pop-up window to provide a pull-down menu. It was really excess to requirements so we decided not to use it, but finding out how was interesting.
 
 Sam
-*
+* I learned a lot more about how all of the puzzle pieces fit together in a project like this, that there is a blend of code and people and technology and tools and imaginary users and workflows that all eventually must mesh.
 * Git, Git, and more Git (http://www.youtube.com/watch?v=vCadcBR95oU)
-*
+* Lots of improvement in my snesibility toward collaborative work. I've always been a lone wolf, or in a group project, just the guy who does everything for everyone else. In this dynamic, I'm coming to a greater understand of the tradeoffs between  the security of control and the positive effects of contributions of others.
+* Overall, this project brought about improved skills in my HTML, CSS, and JS, and further helped to illustrate how much I still have ahead of me to learn. It's been humbling and challenging. I can say that about the entire bootcamp experience, in general.
 
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
