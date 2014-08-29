@@ -4,22 +4,19 @@
   padding: 0px;
 }
 
-/*nav {
-  display: inline-block;
-  height: 175px;
-  margin: 2%;
-  width: 100%;
-}*/
-
 .column1, .column2, .column3 {
   width: 31.3%;
   float: left;
-  margin: 0.5%;
-  margin-bottom: 0.5%;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   border-radius: 1em;
 }
 
 .column2 {
+  background-color: gray;
+  border-radius: 2em;
   text-align: center;
 }
 
@@ -28,7 +25,7 @@
   margin-right: 0%;
 }
 
-#cart {
+#shopCart {
   float: right;
 }
 
@@ -46,6 +43,10 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-style: italic;
+}
+
+h3 {
+
 }
 
 div {
@@ -94,6 +95,7 @@ section {
 }
 
 .footer__contactBlock {
+  border-radius: 2em;
   margin-left: 2%;
   margin-top: 1%;
   text-indent: 1%;
@@ -147,4 +149,13 @@ section {
   display: inline;
   padding: 1%;
   margin: 3%;
+}
+
+#create-content {
+  text-align: left;
+  margin-left: 5em;
+}
+
+.button-row {
+  margin: 1em;
 }
