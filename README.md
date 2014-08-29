@@ -50,6 +50,10 @@ Sam
 * Git, Git, and more Git (http://www.youtube.com/watch?v=vCadcBR95oU)
 *
 
+Forrest -
+I learned a ton about jQuery and Node.js. Also, it was excellent practice getting to work with a team where we each were responsible for a portion of the work but also able to assist eachother with any difficulties that arouse.
+I think the biggest lesson though was not to get too attached to the original idea. As the work progresses it's important to be able to change your approach especially when facing a difficult problem.  We also learned that some ideas, while they may at first sound simple, can be really complex so it's best to start with the most simple 'dry' approach possible, after which it's much simple to expand your project.
+
 =====CREDITS - ORIGINAL IDEA BY=====
 CRAIG GRANT
 ANDREW POTTER
