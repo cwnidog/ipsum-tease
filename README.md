@@ -43,7 +43,7 @@ We used an Agile-style approach to the project with morning scrums and a Kanban,
 INDIVIDUAL LESSONS LEARNED:
 ===========================
 
-John - I learned quite a bit more about HTML and jQuery on this project. Also I was able to brush up on my software project management, knocking some of the rust off. I learned almost as much researching things that we *didn't* do as I did for the thing sthat we did end up using. For instance, use of a pop-up window to provide a pull-down menu. It was really excess to requirements so we decided not to use it, but finding out how was interesting.
+John - I learned quite a bit more about HTML and jQuery on this project. Also I was able to brush up on my software project management, knocking some of the rust off. I learned almost as much researching things that we *didn't* do as I did for the thing sthat we did end up using. For instance, use of a pop-up window to provide a pull-down menu. It was really excess to requirements so we decided not to use it, but finding out how was interesting. Additionally, this project got me very comfortable with using git. I also enjoyed seeing the project page look good on a MacBook, iPad, and iPhone.
 
 Sam
 * I learned a lot more about how all of the puzzle pieces fit together in a project like this, that there is a blend of code and people and technology and tools and imaginary users and workflows that all eventually must mesh.
