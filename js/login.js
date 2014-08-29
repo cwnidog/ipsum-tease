@@ -9,6 +9,7 @@ function loginForm() {
 
 function loggedIn() {
   var checkname = $("div.login #named").val();
+  $("div.login form").empty();
   if(localStorage.getItem('loggedinuser') === null) {
     $("div.login").append("<form><button id='login-pop'>Login</button></form>");
     $("button#login-pop").on("click", function(){
